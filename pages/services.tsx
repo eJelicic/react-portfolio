@@ -10,6 +10,7 @@ import deved from '../public/dev-ed-wave.png';
 import design from '../public/design.png';
 import { useState } from "react";
 
+
 //'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
 
 export default function Home() {

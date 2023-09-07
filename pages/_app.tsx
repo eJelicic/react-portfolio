@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import { DarkModeProvider } from '../components/darkModeProvider';
 
 interface AppProps {
   Component: React.ElementType;
@@ -6,7 +7,11 @@ interface AppProps {
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <DarkModeProvider>
+      <Component {...pageProps} />;
+    </DarkModeProvider>
+  );
 }
 
 export default MyApp;
