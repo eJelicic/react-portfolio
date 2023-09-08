@@ -11,7 +11,7 @@ interface Experience {
 
 function ExperienceCard({ title, company, date, description }: Experience) {
     return (
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden m-4">
+        <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:text-white">
             <div className="p-4">
                 <h2 className="text-xl font-semibold">{title}</h2>
                 <p className="text-gray-500">{company}</p>
@@ -45,7 +45,7 @@ export default function ExperiencesPage() {
             
             <Navbar></Navbar>
 
-            <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+            <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
                 <h1 className="text-3xl font-semibold mb-4 dark:text-white">My Experiences</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {experiences.map((experience, index) => (
