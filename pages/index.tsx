@@ -8,9 +8,7 @@ import {
 import Image from "next/legacy/image";
 import deved from '../public/dev-ed-wave.png';
 import design from '../public/design.png';
-import { DarkModeProvider, useDarkMode } from '../components/darkModeProvider';
-
-//'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
+import { useDarkMode } from '../components/darkModeProvider';
 
 export default function Home() {
   const { darkMode, setDarkMode } = useDarkMode();

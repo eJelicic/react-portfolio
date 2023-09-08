@@ -9,7 +9,7 @@ interface AppProps {
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <DarkModeProvider>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </DarkModeProvider>
   );
 }
