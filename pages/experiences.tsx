@@ -77,7 +77,7 @@ export default function ExperiencesPage() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <Image width={150} height={35} src={agilathon} alt="Design" className="w-20 h-20" />
+                                        <Image width={160} height={35} src={agilathon} alt="Design" className="w-20 h-20" />
                                     </a>
                                 </div>
                             </div>
