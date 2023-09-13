@@ -4,7 +4,7 @@ import { useDarkMode } from '../components/darkModeProvider';
 import Image from "next/legacy/image";
 import amber from '../public/Amber-logo.svg';
 import agilathon from '../public/agilathon_logo.webp';
-import playnirvana from '../public/playnirvanaLogo.png';
+import playnirvana from '../public/playnirvana-square-logo-red.webp';
 
 export default function ExperiencesPage() {
     const { darkMode, setDarkMode } = useDarkMode();
@@ -16,7 +16,7 @@ export default function ExperiencesPage() {
 
             <Navbar></Navbar>
 
-            <main className="w-auto bg-white px-10 dark:bg-gray-900 md:px-20 min-h-screen">
+            <main className="w-auto bg-white px-10 dark:bg-gray-900 md:px-20 min-h-screen overflow-hidden">
                 <h1 className="text-3xl font-semibold mb-4 dark:text-white">My Experiences</h1>
 
                 <div className="max-w-screen-lg mx-auto">
@@ -45,7 +45,7 @@ export default function ExperiencesPage() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <Image src={amber} alt="Design" className="w-20 h-20" />
+                                        <Image src={amber} alt="Design" />
                                     </a>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ export default function ExperiencesPage() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <Image width={160} height={35} src={agilathon} alt="Design" className="w-20 h-20" />
+                                        <Image width={160} height={35} src={agilathon} alt="Design"/>
                                     </a>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@ export default function ExperiencesPage() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <Image width={180} height={45} src={playnirvana} alt="Design" className="w-20 h-20" />
+                                        <Image width={75} height={75} src={playnirvana} alt="Design" />
                                     </a>
                                 </div>
                             </div>
