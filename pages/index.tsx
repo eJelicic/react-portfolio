@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Navbar from '../components/navbar';
 import {
-  AiFillTwitterCircle,
+  AiFillFacebook,
   AiFillLinkedin,
   AiFillYoutube
 } from "react-icons/ai";
 import Image from "next/legacy/image";
-import deved from '../public/dev-ed-wave.png';
+import deved from '../public/EugenProfilePic.jpg';
 import design from '../public/design.png';
 import { useDarkMode } from '../components/darkModeProvider';
 
@@ -25,15 +25,30 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium">
               Eugen Jeličić
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white">Developer and designer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">
-              Freelancer bla ba o meni
-            </p>
+            <h3 className="text-2xl py-2 dark:text-white">      Freelance software developer and live sound engineer</h3>
           </div>
           <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-white">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillYoutube />
+            <a
+              href="https://www.facebook.com/eugen.jelicic"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillFacebook />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/eugen-jeli%C4%8Di%C4%87-b4876763"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillLinkedin />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCmkR-6Xcfgf2wqiSXCv_4Fw"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillYoutube />
+            </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
             <Image src={deved} layout="fill" objectFit="cover" alt={""} />
