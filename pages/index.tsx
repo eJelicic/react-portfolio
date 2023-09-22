@@ -57,55 +57,33 @@ export default function Home() {
         <section className="flex flex-col">
           <div className="text-center shadow-lg p-10 rounded-xl my-10">
             <h3 className="text-3xl py-1 dark:text-white">
-              Services i offer
+              About me
             </h3>
             <p className="text-md py-2 leading-8 text-gray-80 dark:text-white">
-              First text about me
+              I'm a full-stack developer located in Split (Croatia) with primary experience in Microsoft .NET backend development.
+              I started out during college with a couple of friends and a web-app startup for assembling custom computers. After college, I worked for
+              two companies as either a full-stack web developer or a backend developer, and one company as a NodeJS backend developer.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-80 dark:text-white">
-              More text about me
+            <p>
+              From this point on, my development goals will focus on freelance services during the autumn and winter and developing some of my own startup ideas.
+              For that purpose, I'm currently expanding to mobile development, starting with Flutter.
             </p>
-          </div>
-          <div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:text-white">
-              <Image src={design} width={100} height={100}></Image>
-              <h3>Beautifull Designs</h3>
-              <p>
-                Creating blabla
-              </p>
-              <h4>Design tools i use</h4>
-              <p className="text-teal-600 py-4">1</p>
-              <p className="text-teal-600 py-1">2</p>
-              <p className="text-teal-600 py-1">3</p>
-              <p className="text-teal-600 py-1">4</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:text-white">
-              <Image src={design} width={100} height={100}></Image>
-              <h3>Beautifull Designs</h3>
-              <p>
-                Creating blabla
-              </p>
-              <h4>Design tools i use</h4>
-              <p className="text-teal-600 py-4">1</p>
-              <p className="text-teal-600 py-1">2</p>
-              <p className="text-teal-600 py-1">3</p>
-              <p className="text-teal-600 py-1">4</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:text-white">
-              <Image src={design} width={100} height={100}></Image>
-              <h3>Beautifull Designs</h3>
-              <p>
-                Creating blabla
-              </p>
-              <h4>Design tools i use</h4>
-              <p className="text-teal-600 py-4">1</p>
-              <p className="text-teal-600 py-1">2</p>
-              <p className="text-teal-600 py-1">3</p>
-              <p className="text-teal-600 py-1">4</p>
-            </div>
+            <p>
+              Besides working as a software developer, I've also been a freelance live sound engineer for the past ten years.
+              With more than 1500 concerts behind me, I've started making a living from this profession, so I've moved away from full-time company employment as a developer.
+            </p>
+            <p>
+              Besides this, I've volunteered at a local nightclub, Kocka, for years, where I've organized multiple well-attended live-sound workshops.
+              I'm also currently leading the people and technical management for many events under the production of a new live sound rental company based in Split.
+              started in a colaboration with a friend.
+              All of this has given me a wide range of skills.
+            </p>
+            <p>
+              In my free time, I'm a drummer and am currently working on a new band with a couple of friends.
+            </p>
           </div>
         </section>
       </main>
-    </div>
+    </div >
   )
 }
