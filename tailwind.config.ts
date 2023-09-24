@@ -8,6 +8,11 @@ const tailwindConfig: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        dark: {
+          background: '#18191a',
+        },
+      },
       fontFamily: {
         burtons: "burtons",
         poppins: ["Poppins", "sans-serif"],

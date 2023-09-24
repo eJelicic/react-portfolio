@@ -20,6 +20,7 @@ export function DarkModeProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
+      <div className={`bg-${darkMode ? 'dark-background' : 'white'}`}></div>
       {children}
     </DarkModeContext.Provider>
   );

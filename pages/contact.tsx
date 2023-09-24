@@ -56,12 +56,12 @@ function Contact() {
             </Head>
 
             <Navbar></Navbar>
-            <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 min-h-screen">
-                <div className="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-6">
-                    <h2 className="text-2xl font-semibold mb-4 text-center">Contact me!</h2>
+            <main className=" bg-white px-10 dark:bg-dark-background md:px-20 lg:px-40 min-h-screen">
+                <div className="max-w-lg mx-auto dark:bg-dark-background bg-white rounded-lg shadow-lg p-6">
+                    <h2 className="text-black dark:text-white text-2xl font-semibold mb-4 text-center">Contact me!</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-4">
-                            <label htmlFor="firstName" className="block text-gray-600">
+                            <label htmlFor="firstName" className="dark:text-white text-black block">
                                 First Name
                             </label>
                             <input
@@ -75,7 +75,7 @@ function Contact() {
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="lastName" className="block text-gray-600">
+                            <label htmlFor="lastName" className="dark:text-white text-black block">
                                 Last Name
                             </label>
                             <input
@@ -89,7 +89,7 @@ function Contact() {
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="email" className="block text-gray-600">
+                            <label htmlFor="email" className="dark:text-white text-black block">
                                 Email
                             </label>
                             <input
@@ -103,7 +103,7 @@ function Contact() {
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="subject" className="block text-gray-600">
+                            <label htmlFor="subject" className="dark:text-white text-black block">
                                 Subject
                             </label>
                             <input
@@ -117,7 +117,7 @@ function Contact() {
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="message" className="block text-gray-600">
+                            <label htmlFor="message" className="dark:text-white text-black block">
                                 Message
                             </label>
                             <textarea

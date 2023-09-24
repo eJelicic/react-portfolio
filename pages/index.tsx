@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <Navbar></Navbar>
 
-      <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 min-h-screen">
+      <main className=" bg-white px-10 dark:bg-dark-background md:px-20 lg:px-40 min-h-screen">
         <section className="flex flex-col">
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium">
