@@ -8,6 +8,9 @@ const tailwindConfig: Config = {
   ],
   theme: {
     extend: {
+      height: {
+        'auto': 'auto',
+      },
       colors: {
         dark: {
           background: '#18191a',
