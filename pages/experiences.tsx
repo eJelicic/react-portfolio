@@ -11,7 +11,7 @@ export default function ExperiencesPage() {
     return (
         <div className={darkMode ? "dark" : ""}>
             <Head>
-                <title>Eugen Jeličić Portofolio</title>
+                <title>Eugen Jeličić Portfolio</title>
             </Head>
 
             <Navbar></Navbar>
@@ -24,9 +24,9 @@ export default function ExperiencesPage() {
                         <h3 className="font-bold text-2xl mb-4">Amber IT Solutions</h3>
                         <p>Full stack developer on an enterprise SaaS web-app for schooling.</p>
                         <p>
-                            In this company, I also worked on another smaller project for which we used Angular 7 on the front-end and .NET Core on the backend.
-                            I worked on everything from smaller stuff like bug fixes and minor updates to implementing large new parts of the system that required an in-depth understanding of this app's architecture.
-                            For version control and work-sharing, we used Jira and Bitbucket.
+                            {"In this company, I also worked on another smaller project for which we used Angular 7 on the front-end and .NET Core on the backend."}
+                            {"I worked on everything from smaller stuff like bug fixes and minor updates to implementing large new parts of the system that required an in-depth understanding of this app's architecture. "}
+                            {"For version control and work-sharing, we used Jira and Bitbucket. "}
                         </p>
                         <div className="mt-4">
                             <div className="flex justify-evenly items-center">
@@ -54,12 +54,12 @@ export default function ExperiencesPage() {
                 </div>
 
                 <div className="max-w-screen-lg mx-auto">
-                    <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:text-white dark:bg-gradient-to-tl from-black">
+                    <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:text-white dark-bg-gradient-to-tl from-black">
                         <h3 className="font-bold text-2xl mb-4">Agilathon</h3>
                         <p>Node.js backend developer working on customizations for medical studies in the eCOA industry for the American partner Medable.</p>
                         <p>
                             I was a part of a very large team working with agile methodologies to develop new medical study applications.
-                            For version control and work-sharing, we used Jira with bitbucket and GitLab.
+                            For version control and work-sharing, we used Jira with Bitbucket and GitLab.
                         </p>
                         <div className="mt-4">
                             <div className="flex justify-evenly items-center">
@@ -77,7 +77,7 @@ export default function ExperiencesPage() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <Image width={160} height={35} src={agilathon} alt="Design"/>
+                                        <Image width={160} height={35} src={agilathon} alt="Design" />
                                     </a>
                                 </div>
                             </div>
@@ -86,13 +86,13 @@ export default function ExperiencesPage() {
                 </div>
 
                 <div className="max-w-screen-lg mx-auto">
-                    <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:text-white dark:bg-gradient-to-tl from-black">
+                    <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:text-white dark-bg-gradient-to-tl from-black">
                         <h3 className="font-bold text-2xl mb-4">PlayNirvana group</h3>
                         <p>.NET backend engineer working on maintenance of existing and implementation of new betting products.</p>
                         <p>
                             Technologies used were .NET 6 with a PostgreSQL database. Development was supervised by a senior team lead.
                             For testing there was a QA team and we usually implemented unit tests after new features were developed.
-                            For continuous integration team-city was used and during development we were in communication with other backend and frontend segments of the company.
+                            For continuous integration TeamCity was used, and during development, we were in communication with other backend and frontend segments of the company.
                         </p>
                         <div className="mt-4">
                             <div className="flex justify-evenly items-center">
@@ -119,8 +119,7 @@ export default function ExperiencesPage() {
                         </div>
                     </div>
                 </div>
-
             </main>
         </div>
-    )
+    );
 }

@@ -1,8 +1,10 @@
+// Import the necessary types
 import Head from "next/head";
 import Navbar from '../components/navbar';
 import { useDarkMode } from '../components/darkModeProvider';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { ChangeEvent, FormEvent } from 'react';
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -13,7 +15,8 @@ function Contact() {
         message: '',
     });
 
-    const handleChange = (e) => {
+    // Create a more generalized event handler that can handle both input and textarea elements
+    const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData({
             ...formData,
@@ -21,7 +24,7 @@ function Contact() {
         });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
 
         try {
@@ -46,17 +49,18 @@ function Contact() {
             alert('Message could not be sent. Please try again later.');
         }
     };
+
     const { darkMode, setDarkMode } = useDarkMode();
+
     return (
-
         <div className={darkMode ? "dark" : ""}>
-
             <Head>
-                <title>Eugen Jeličić Portofolio</title>
+                <title>Eugen Jeličić Portfolio</title>
             </Head>
 
-            <Navbar></Navbar>
-            <main className=" bg-white px-10 dark:bg-dark-background md:px-20 lg:px-40 min-h-screen">
+            <Navbar />
+
+            <main className="bg-white px-10 dark:bg-dark-background md:px-20 lg:px-40 min-h-screen">
                 <div className="max-w-lg mx-auto dark:bg-dark-background bg-white rounded-lg shadow-lg p-6">
                     <h2 className="text-black dark:text-white text-2xl font-semibold mb-4 text-center">Contact me!</h2>
                     <form onSubmit={handleSubmit}>
@@ -69,7 +73,7 @@ function Contact() {
                                 id="firstName"
                                 name="firstName"
                                 value={formData.firstName}
-                                onChange={handleChange}
+                                onChange={handleInputChange}
                                 className="w-full p-2 border rounded"
                                 required
                             />
@@ -83,7 +87,7 @@ function Contact() {
                                 id="lastName"
                                 name="lastName"
                                 value={formData.lastName}
-                                onChange={handleChange}
+                                onChange={handleInputChange}
                                 className="w-full p-2 border rounded"
                                 required
                             />
@@ -97,7 +101,7 @@ function Contact() {
                                 id="email"
                                 name="email"
                                 value={formData.email}
-                                onChange={handleChange}
+                                onChange={handleInputChange}
                                 className="w-full p-2 border rounded"
                                 required
                             />
@@ -111,7 +115,7 @@ function Contact() {
                                 id="subject"
                                 name="subject"
                                 value={formData.subject}
-                                onChange={handleChange}
+                                onChange={handleInputChange}
                                 className="w-full p-2 border rounded"
                                 required
                             />
@@ -124,7 +128,7 @@ function Contact() {
                                 id="message"
                                 name="message"
                                 value={formData.message}
-                                onChange={handleChange}
+                                onChange={handleInputChange}
                                 rows={4}
                                 className="w-full p-2 border rounded"
                                 required
@@ -144,4 +148,3 @@ function Contact() {
 }
 
 export default Contact;
-
