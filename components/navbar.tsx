@@ -15,8 +15,8 @@ function Navbar() {
 
     return (
         <nav className="bg-white border-gray-200 dark:bg-dark-background dark:text-white">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <div className={darkMode ? "dark" : ""}>
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto mr-2 ml-2">
+                <div className={darkMode ? "dark mr-2 mt-2" : "ml-2 mr-2 mt-2"}>
                     <Image src={darkMode ? hiFiLiveLogo : hiFiLiveLogoWhite} width={darkMode ? 80 : 65} height={darkMode ? 50 : 55}></Image>
                 </div>
                 <button

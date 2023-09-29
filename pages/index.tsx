@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <Navbar></Navbar>
 
-      <main className=" bg-white px-10 dark:bg-dark-background md:px-20 lg:px-40 min-h-screen">
+      <main className="bg-white px-10 dark:bg-dark-background md:px-20 lg:px-40 min-h-screen overflow-auto">
         <section className="flex flex-col">
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium">
@@ -26,7 +26,7 @@ export default function Home() {
             </h2>
             <h3 className="text-2xl py-2 dark:text-white">Freelance software developer and live sound engineer</h3>
           </div>
-          <div className="text-5xl flex justify-center gap-16 text-gray-700 dark:text-white">
+          <div className="text-5xl flex sm: gap-2 md:gap-8 lg:gap-12 justify-center text-gray-700 dark:text-white">
             <a
               href="https://www.facebook.com/eugen.jelicic"
               target="_blank"
@@ -48,6 +48,8 @@ export default function Home() {
             >
               <AiFillYoutube />
             </a>
+          </div>
+          <div className="text-5xl flex justify-center text-gray-700 dark:text-white mt-4">
             <a
               className="bg-gray-700 dark:bg-white text-white dark:text-black  text-lg px-4 py-2 rounded-full flex items-center justify-center font-bold"
               href="/Cv.pdf"

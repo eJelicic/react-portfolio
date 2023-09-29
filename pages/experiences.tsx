@@ -54,7 +54,7 @@ export default function ExperiencesPage() {
                 </div>
 
                 <div className="max-w-screen-lg mx-auto">
-                    <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:text-white dark-bg-gradient-to-tl from-black">
+                    <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:text-white dark:bg-gradient-to-tl from-black">
                         <h3 className="font-bold text-2xl mb-4">Agilathon</h3>
                         <p>Node.js backend developer working on customizations for medical studies in the eCOA industry for the American partner Medable.</p>
                         <p>
@@ -86,7 +86,7 @@ export default function ExperiencesPage() {
                 </div>
 
                 <div className="max-w-screen-lg mx-auto">
-                    <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:text-white dark-bg-gradient-to-tl from-black">
+                    <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:text-white dark:bg-gradient-to-tl from-black">
                         <h3 className="font-bold text-2xl mb-4">PlayNirvana group</h3>
                         <p>.NET backend engineer working on maintenance of existing and implementation of new betting products.</p>
                         <p>
