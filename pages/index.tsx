@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <Navbar></Navbar>
 
-      <main className="bg-white px-10 dark:bg-dark-background md:px-20 lg:px-40 min-h-screen overflow-auto">
+      <main className="bg-white dark:bg-dark-background md:px-20 lg:px-40 min-h-screen overflow-auto">
         <section className="flex flex-col">
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium">
@@ -58,7 +58,7 @@ export default function Home() {
               Download CV
             </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+          <div className="relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden">
             <Image src={deved} layout="fill" objectFit="cover" alt={""} />
           </div>
         </section>
