@@ -17,7 +17,7 @@ export default function ExperiencesPage() {
             <Navbar></Navbar>
 
             <main className="w-auto bg-white px-10 dark:bg-dark-background md:px-20 min-h-screen overflow-hidden">
-                <h1 className="text-3xl font-semibold mb-4 dark:text-white">My Experiences</h1>
+                <h1 className="text-3xl text-center font-semibold mb-4 dark:text-white">My Experiences</h1>
 
                 <div className="max-w-screen-lg mx-auto">
                     <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:text-white dark:bg-gradient-to-tl from-black">
